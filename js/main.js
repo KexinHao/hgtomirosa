@@ -9,16 +9,29 @@ window.addEventListener(
   false
 );
 
-// var $mainDiv    = $('#logo-svg');
-// var $sideChild  = $mainDiv.children('.cls-1');
-// var leftOffset  = $mainDiv.position().left;
-//
-// $mainDiv.scroll(
-//     function(){
-//         $sideChild.css('left', '-' + leftOffset + 'px');
-//     },
-//     function(){
-//          $sideChild.css('left', '0px');
-//     }
-//
-//  );
+$(document).ready(function(){
+  $("#g1").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g2").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g3").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g4").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g5").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g6").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g7").click(function(){
+    location.href = "html/archive.html";
+  });
+  $("#g8").click(function(){
+    location.href = "html/archive.html";
+  });
+});
