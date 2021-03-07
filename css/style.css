@@ -42,7 +42,7 @@ body {
 }
 @keyframes bloom1 {
   to {
-  transform: translate(48vw, 0vh);
+  transform: translate(40vw, 0vh);
   }
 }
 .cls-2 {
@@ -55,7 +55,7 @@ body {
 }
 @keyframes bloom2 {
   to {
-  transform: translate(-36vw, 13vh);
+  transform: translate(-30vw, 17vh);
   }
 }
 .cls-3 {
@@ -81,7 +81,7 @@ body {
 }
 @keyframes bloom4 {
   to {
-  transform: translate(45vw, 31vh);
+  transform: translate(33vw, 31vh);
   }
 }
 .cls-5 {
@@ -94,7 +94,7 @@ body {
 }
 @keyframes bloom5 {
   to {
-  transform: translate(10vw, 40vh);
+  transform: translate(1vw, 35vh);
   }
 }
 .cls-6 {
@@ -107,7 +107,7 @@ body {
 }
 @keyframes bloom6 {
   to {
-  transform: translate(-20vw, 33vh);
+  transform: translate(-19vw, 33vh);
   }
 }
 .cls-7 {
@@ -120,7 +120,7 @@ body {
 }
 @keyframes bloom7 {
   to {
-  transform: translate(9vw, 12vh);
+  transform: translate(2vw, 12vh);
   }
 }
 
