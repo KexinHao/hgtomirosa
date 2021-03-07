@@ -1,0 +1,250 @@
+/*
+TODO::
+
+- on mobile, scroll left-right
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100;1,400;1,500;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+html {
+  /* font-family: "Antique-Olive"; */
+  font-family: 'Alegreya Sans', sans-serif;
+  /* font-size: 22px;
+  line-height: 1.2; */
+}
+
+body {
+  padding: 0;
+}
+
+.opening{
+  position: fixed;
+  width:100vw;
+  height:100vh;
+}
+#logo-svg{
+  /* transform: translateX(3vw); */
+  display: block;
+}
+.cls-1 {
+  animation: bloom1 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom1 {
+  to {
+  transform: translate(48vw, 0vh);
+  }
+}
+.cls-2 {
+  animation: bloom2 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom2 {
+  to {
+  transform: translate(-36vw, 13vh);
+  }
+}
+.cls-3 {
+  animation: bloom3 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom3 {
+  to {
+  transform: translate(-28vw, -10vh);
+  }
+}
+.cls-4 {
+  animation: bloom4 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom4 {
+  to {
+  transform: translate(45vw, 31vh);
+  }
+}
+.cls-5 {
+  animation: bloom5 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom5 {
+  to {
+  transform: translate(10vw, 40vh);
+  }
+}
+.cls-6 {
+  animation: bloom6 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom6 {
+  to {
+  transform: translate(-20vw, 33vh);
+  }
+}
+.cls-7 {
+  animation: bloom7 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom7 {
+  to {
+  transform: translate(9vw, 12vh);
+  }
+}
+
+.gallery{
+  /* transform: translateY(100vh); */
+
+}
+#placement{
+  height:100vh;
+}
+.gallery-container{
+  height:100vh;
+  position: relative;
+}
+.gallery-container > img{
+  width:15%;
+  position: absolute;
+}
+#g1{
+  left:45%;
+  top:66%;
+}
+#g2{
+  left:55%;
+  top:3%;
+}
+#g4{
+  left:35%;
+  top:6%;
+}
+#g5{
+  left:73%;
+  top:35%;
+}
+#g6{
+  left:62%;
+  top:60%;
+}
+#g7{
+  width:25%;
+  left:14%;
+  top:60%;
+}
+#g8{
+  left:22%;
+  top:40%;
+}
+#g3{
+  left:9%;
+  top:30%;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10rem;
+  height: 100%;
+}
+
+.project-cover {
+  width: 20rem;
+  height: 20rem;
+  margin: 0.5rem;
+}
+img{
+  display: block;
+  border-radius: 5%;
+  width: 100%;
+}
+
+
+footer {
+  margin-bottom: 2rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+  width: 90%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .link-about {
+    margin-top: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  nav p:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+
+  .card-front h3 {
+    font-size: 0.9rem;
+  }
+
+  .titlecontainer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .titlecontainer h1 {
+    margin: 1rem 0;
+    order: 2;
+  }
+
+  .titlecontainer img:nth-child(1) {
+    order: 1;
+  }
+
+  .titlecontainer img:nth-child(3) {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-front__middle {
+    height: 12em;
+  }
+}
