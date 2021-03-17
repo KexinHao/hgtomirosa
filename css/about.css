@@ -1,0 +1,157 @@
+/*
+TODO::
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Recursive', sans-serif; */
+  /* font-family: "Antique-Olive"; */
+  /* font-family: 'Alegreya Sans', sans-serif; */
+  /* font-size: 22px;
+  line-height: 1.2; */
+}
+body {
+  padding: 0;
+  background-color: #c9e0ff;
+}
+a{
+  list-style-type: none;
+  text-decoration: none;
+  color:black;
+}
+p{
+  font-size: 1.2rem;
+}
+
+.menu{
+  position:fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content-container{
+  margin-top:5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+nav{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+nav > a{
+  background-color: rgb(255, 199, 56);
+  border-radius: 2rem;
+  border: 1px solid black;
+  flex-grow: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left:0.2rem;
+  margin-right:0.2rem;
+}
+#navbar-hgtomirosa{
+  font-family: 'Ranchers', cursive;
+  font-size: 4rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #5180c1;
+}
+
+#general-intro{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+.toggle-info{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+}
+.name{
+  padding-left: 25%;
+  /* -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
+  color: rgb(255, 199, 56); */
+  cursor: pointer;
+  font-family: 'Ranchers', cursive;
+  font-size: 2rem;
+}
+.artist-statement{
+  margin-left: 25%;
+  width:50%;
+}
+.artist-photo{
+  padding-left: 1rem;
+  width:50%;
+}
+.artist-photo > img{
+  border:1px solid black;
+  border-radius: 2%;
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    font-size: 1.2rem;
+  }
+  nav > a{
+    background-color: rgb(255, 199, 56);
+    border-radius: 2rem;
+    border: 1px solid black;
+    flex-grow: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+  }
+  #navbar-hgtomirosa{
+    display:none;
+  }
+
+  #general-intro{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+
+  .toggle-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .name{
+    padding-left: 0%;
+    font-size: 2rem;
+  }
+  .artist-statement{
+    margin-left: 0%;
+    width:100%;
+  }
+  .artist-photo{
+    padding-left: 0;
+    width:100%;
+  }
+  .artist-photo > img{
+    width: 100%;
+    display: block;
+  }
+
+
+}
