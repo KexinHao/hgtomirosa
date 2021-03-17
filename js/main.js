@@ -21,10 +21,10 @@ $(function(){
       location.href = "archive/casestudy.html";
     });
     $("#g2").click(function(){
-      location.href = "archive/casestudy.html";
+      location.href = "archive/the-handshake.html";
     });
     $("#g3").click(function(){
-      location.href = "archive/casestudy.html";
+      location.href = "about.html";
     });
     $("#g4").click(function(){
       location.href = "archive/casestudy.html";
@@ -39,7 +39,13 @@ $(function(){
       location.href = "archive/casestudy.html";
     });
     $("#g8").click(function(){
-      location.href = "archive/casestudy.html";
+      location.href = "archive/rock-talks.html";
+    });
+    $("#g9").click(function(){
+      location.href = "archive/wide-angle-on-happy-valley.html";
+    });
+    $("#g10").click(function(){
+      location.href = "archive/what-do-you-think-of-my-drawings.html";
     });
 
    })
