@@ -49,4 +49,23 @@ $(function(){
       location.href = "archive/what-do-you-think-of-my-drawings.html";
     });
 
+    $("#project1").click(function(){
+      location.href = "archive/moving-in.html";
+    });
+    $("#project2").click(function(){
+      location.href = "archive/the-handshake.html";
+    });
+    $("#project3").click(function(){
+      location.href = "archive/what-do-you-think-of-my-drawings.html";
+    });
+    $("#project4").click(function(){
+      location.href = "archive/rock-talks.html";
+    });
+    $("#project5").click(function(){
+      location.href = "archive/case-study.html";
+    });
+    $("#project7").click(function(){
+      location.href = "archive/wide-angle-on-happy-valley.html";
+    });
+
    })

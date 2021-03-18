@@ -176,6 +176,7 @@ nav > a{
 .gallery-container > img{
   width:15%;
   position: absolute;
+  cursor: pointer;
 }
 #g1 {
   animation: fly1 0.5s linear infinite;
