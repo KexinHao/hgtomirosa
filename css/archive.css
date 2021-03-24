@@ -41,6 +41,7 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background-color: #c9e0ff; */
 }
 nav{
   text-align: center;
@@ -125,7 +126,23 @@ nav > a{
 
 
 /* style for the project page */
-
+.project-images{
+  margin-top:14rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.project-text{
+  padding-top:5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  top:0;
+  position: fixed;
+  background-color: #c9e0ff;
+  border-bottom: 1px black solid;
+  border-bottom-left-radius: 1.5rem;
+}
 .project-gallery{
   display: flex;
   flex-wrap: wrap;
@@ -137,9 +154,21 @@ nav > a{
 }
 .project-gallery>img{
   display: block;
-  width: 40rem;
   margin:1rem;
 }
+#L-pic{
+  max-width:50rem;
+  height:auto;
+}
+#M-pic{
+  max-width:35rem;
+  height:auto;
+}
+#S-pic{
+  max-width:20rem;
+  height:auto;
+}
+
 
 @media screen and (max-width: 600px) {
   nav{
@@ -158,5 +187,30 @@ nav > a{
   #navbar-hgtomirosa{
     display:none;
   }
+  .project-images{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project-gallery>img{
+    display: block;
+    margin:5px;
+    max-width:100% !important;
+    height:auto;
+  }
+  .project-text{
+    padding-top:3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    top:0;
+    position: fixed;
+    background-color: #c9e0ff;
+    /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, #c9e0ff 27%); */
+    border-bottom: 1px black solid;
+    border-bottom-left-radius: 2rem;
+  }
+
+
 
 }
