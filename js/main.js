@@ -13,11 +13,9 @@ window.addEventListener(
 $(function(){
 
 
-     $('.name').click(function(){
+    $('.name').click(function(){
          $('#info-' + $(this).attr('id')).toggle();
-        });
-
-
+    });
     $("#g1").click(function(){
       location.href = "archive/case-study.html";
     });
@@ -66,6 +64,28 @@ $(function(){
     });
     $("#project7").click(function(){
       location.href = "archive/wide-angle-on-happy-valley.html";
+    });
+    $("#footer-logo-backhome").click(function(){
+      location.href = "../index.html";
+    });
+
+    $("#footer-logo").click(function(){
+      location.href = "index.html";
+    });
+    $("#address").click(function(){
+      location.href = "https://www.google.nl/maps/place/Hgtomi+Rosa/@52.0661852,4.3434077,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5b77a8be9ceb5:0x8fac427fef4719d7!8m2!3d52.0661852!4d4.3455964";
+    });
+    $("#email").click(function(){
+      location.href = "mailto:info@hgtomirosa.com";
+    });
+    $("#newsletter").click(function(){
+      location.href = "https://mailchi.mp/eefd1ce474b1/subscribe-to-our-newsletter";
+    });
+    $("#instagram").click(function(){
+      location.href = "https://www.instagram.com/hgtomi_rosa/";
+    });
+    $("#facebook").click(function(){
+      location.href = "https://www.facebook.com/hgtomirosa";
     });
 
    })

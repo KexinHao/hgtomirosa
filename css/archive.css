@@ -122,12 +122,58 @@ nav > a{
   /* margin-bottom: -0.3%; */
 }
 
+footer{
+  width:100%;
+  border-top: 1px black solid;
+  border-top-right-radius: 1.5rem;
+  margin-top:5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow:1;
+}
+#footer-logo{
+  flex-grow:1;
+  margin:3%;
+}
+#footer-logo-backhome{
+  flex-grow:1;
+  margin:3%;
+}
+#address{
+  flex-grow:4;
+}
+.footer-part > p{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  flex-grow:1;
+  border-right: 1px black solid;
+}
+#facebook{
+  border-right: 0;
+}
+#footer-logo:hover{
+  cursor: pointer;
+}
+#footer-logo-backhome:hover{
+  cursor: pointer;
+}
+.footer-part > p:hover{
+  cursor: pointer;
+  font-style: italic;
+}
 
 
 
 /* style for the project page */
 .project-images{
-  margin-top:14rem;
+  margin-top:12rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -136,9 +182,10 @@ nav > a{
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   top:0;
   position: fixed;
+  width:100%;
   background-color: #c9e0ff;
   border-bottom: 1px black solid;
   border-bottom-left-radius: 1.5rem;
@@ -155,6 +202,7 @@ nav > a{
 .project-gallery>img{
   display: block;
   margin:1rem;
+  max-width:50rem;
 }
 #L-pic{
   max-width:50rem;
@@ -204,13 +252,36 @@ nav > a{
     padding-bottom: 1rem;
     font-size: 0.9rem;
     top:0;
-    position: fixed;
+    position: absolute;
     background-color: #c9e0ff;
     /* background: linear-gradient(0deg, rgba(255,255,255,0) 0%, #c9e0ff 27%); */
     border-bottom: 1px black solid;
     border-bottom-left-radius: 2rem;
   }
+  .cover-title{
+    line-height: 90%;
+    margin-top:-3px;
+    margin-bottom: 8px;
+  }
 
+
+
+    footer{
+      flex-direction: column;
+    }
+    #address{
+      flex-grow:5;
+    }
+    .footer-part > p{
+      border-right: 0;
+      border-bottom: 1px black solid;
+    }
+    #email{
+      border-right: 1px black solid;
+    }
+    #instagram{
+      border-right: 1px black solid;
+    }
 
 
 }

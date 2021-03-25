@@ -19,8 +19,19 @@ html {
   line-height: 1.2; */
 }
 body {
-  padding: 0;
   background-color: #c9e0ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-container{
+  flex-basis: auto;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+footer{
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 a{
   list-style-type: none;
@@ -42,9 +53,11 @@ p{
   justify-content: space-between;
 }
 .content-container{
+  min-height: 100%;
   margin-top:5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: -50px;
 }
 nav{
   text-align: center;
@@ -96,6 +109,9 @@ nav > a{
   margin-left: 25%;
   width:50%;
 }
+#participants-website-link:hover{
+  font-style: italic;
+}
 .artist-photo{
   padding-left: 1rem;
   width:50%;
@@ -106,6 +122,50 @@ nav > a{
   width: 100%;
   display: block;
 }
+
+footer{
+  width:100%;
+  border-top: 1px black solid;
+  border-top-right-radius: 1.5rem;
+  margin-top:5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow:1;
+}
+.footer-part:hover{
+  cursor: pointer;
+}
+#footer-logo{
+  flex-grow:1;
+  margin:3%;
+}
+#address{
+  flex-grow:4;
+}
+.footer-part > p{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  flex-grow:1;
+  border-right: 1px black solid;
+}
+#facebook{
+  border-right: 0;
+}
+#footer-logo:hover{
+  cursor: pointer;
+}
+.footer-part > p:hover{
+  cursor: pointer;
+  font-style: italic;
+}
+
 
 @media screen and (max-width: 600px) {
   nav{
@@ -151,6 +211,24 @@ nav > a{
   .artist-photo > img{
     width: 100%;
     display: block;
+  }
+
+
+  footer{
+    flex-direction: column;
+  }
+  #address{
+    flex-grow:5;
+  }
+  .footer-part > p{
+    border-right: 0;
+    border-bottom: 1px black solid;
+  }
+  #email{
+    border-right: 1px black solid;
+  }
+  #instagram{
+    border-right: 1px black solid;
   }
 
 
