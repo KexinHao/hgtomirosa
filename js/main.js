@@ -10,8 +10,11 @@ window.addEventListener(
 );
 
 
-$(function(){
 
+$(document).ready(function (){
+
+  var projecttextHeight = $('.project-text').outerHeight();
+  $('.project-images').css('margin-top', projecttextHeight);
 
     $('.name').click(function(){
          $('#info-' + $(this).attr('id')).toggle();
@@ -87,5 +90,4 @@ $(function(){
     $("#facebook").click(function(){
       location.href = "https://www.facebook.com/hgtomirosa";
     });
-
    })

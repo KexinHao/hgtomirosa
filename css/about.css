@@ -78,11 +78,13 @@ nav > a{
   margin-right:0.2rem;
 }
 #navbar-hgtomirosa{
-  font-family: 'Ranchers', cursive;
+  /* font-family: 'Ranchers', cursive;
   font-size: 4rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  color: #5180c1;
+  color: #5180c1; */
+  flex-grow: 0.35;
+  padding:0.5rem;
 }
 
 #general-intro{

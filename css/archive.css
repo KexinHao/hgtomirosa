@@ -68,11 +68,13 @@ nav > a{
   font-style: italic;
 }
 #navbar-hgtomirosa{
-  font-family: 'Ranchers', cursive;
+  /* font-family: 'Ranchers', cursive;
   font-size: 4rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  color: #5180c1;
+  color: #5180c1; */
+  flex-grow: 0.35;
+  padding:0.5rem;
 }
 .content-container{
   margin-top:5rem;
@@ -172,11 +174,7 @@ footer{
 
 
 /* style for the project page */
-.project-images{
-  margin-top:12rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+
 .project-text{
   padding-top:5rem;
   padding-left: 2rem;
@@ -189,6 +187,10 @@ footer{
   background-color: #c9e0ff;
   border-bottom: 1px black solid;
   border-bottom-left-radius: 1.5rem;
+}
+.project-images{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .project-gallery{
   display: flex;
@@ -216,6 +218,134 @@ footer{
   max-width:20rem;
   height:auto;
 }
+
+
+
+.interactive-background{
+  position: fixed;
+  z-index: -99;
+  height:100%;
+  width:100%;
+  left:0;
+  top:-30%;
+}
+.interactive-background > div > svg{
+  width:140px;
+}
+.small-flower-1{
+  margin-left:7%;
+  margin-top:25%;
+}
+.small-flower-2{
+  margin-left:40%;
+  margin-top:-10%;
+}
+.small-flower-3{
+  margin-left:70%;
+  margin-top:20%;
+}
+.small-flower-4{
+  margin-left:20%;
+  margin-top:-20%;
+}
+.small-flower-5{
+  margin-left:60%;
+  margin-top:-10%;
+}
+.bg-cls-1 {
+  animation: bloom1 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom1 {
+  to {
+  transform: translate(20vw, 0vh);
+  }
+}
+.bg-cls-2 {
+  animation: bloom2 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom2 {
+  to {
+  transform: translate(-10vw, 17vh);
+  }
+}
+.bg-cls-3 {
+  animation: bloom3 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom3 {
+  to {
+  transform: translate(-8vw, -10vh);
+  }
+}
+.bg-cls-4 {
+  animation: bloom4 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom4 {
+  to {
+  transform: translate(3vw, 7vh);
+  }
+}
+.bg-cls-5 {
+  animation: bloom5 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom5 {
+  to {
+  transform: translate(3vw, 24vh);
+  }
+}
+.bg-cls-6 {
+  animation: bloom6 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom6 {
+  to {
+  transform: translate(15vw, 20vh);
+  }
+}
+.bg-cls-7 {
+  animation: bloom7 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-direction: alternate;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+@keyframes bloom7 {
+  to {
+  transform: translate(-6vw, 20vh);
+  }
+}
+
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -281,6 +411,10 @@ footer{
     }
     #instagram{
       border-right: 1px black solid;
+    }
+
+    .interactive-background{
+      display: none;
     }
 
 
