@@ -423,7 +423,10 @@ footer{
       border-right: 1px black solid;
     }
 
-    .interactive-background{
+    .interactive-background-left{
+      display: none;
+    }
+    .interactive-background-right{
       display: none;
     }
 
