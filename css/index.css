@@ -346,4 +346,60 @@ nav > a{
     flex-grow: 2;
     margin: 1rem;
   }
+
+
+
+  @keyframes fly1 {
+    to {
+    transform: translate(10vw, 88vh);
+    }
+  }
+  @keyframes fly2 {
+    to {
+    transform: translate(-15vw, 5vh);
+    }
+  }
+  @keyframes fly3 {
+    to {
+    transform: translate(-26vw, 28vh);
+    }
+  }
+  @keyframes fly4 {
+    to {
+    transform: translate(-44vw, 6vh);
+    }
+  }
+  @keyframes fly5 {
+    to {
+    transform: translate(20vw, 56vh);
+    }
+  }
+  @keyframes fly6 {
+    to {
+    transform: translate(25vw, 80vh);
+    }
+  }
+  @keyframes fly7 {
+    to {
+    transform: translate(-40vw, 90vh);
+    }
+  }
+  @keyframes fly8 {
+    to {
+    transform: translate(-33vw, 60vh);
+    }
+  }
+  @keyframes fly9 {
+    to {
+    transform: translate(-2vw, 70vh);
+    }
+  }
+  @keyframes fly10 {
+    to {
+    transform: translate(18vw, 10vh);
+    }
+  }
+
+
+
 }

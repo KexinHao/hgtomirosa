@@ -221,36 +221,46 @@ footer{
 
 
 
-.interactive-background{
+.interactive-background-left{
   position: fixed;
   z-index: -99;
-  height:100%;
-  width:100%;
-  left:0;
-  top:-30%;
+  height:100vh;
+  width:20%;
+  left:2%;
+  top:14%;
 }
-.interactive-background > div > svg{
-  width:140px;
+.interactive-background-right{
+  position: fixed;
+  z-index: -99;
+  height:100vh;
+  width:20%;
+  right:-5%;
+  top:15%;
 }
 .small-flower-1{
   margin-left:7%;
-  margin-top:25%;
+  width:130px;
 }
 .small-flower-2{
-  margin-left:40%;
-  margin-top:-10%;
+  margin-left:-10%;
+  width:190px;
 }
 .small-flower-3{
-  margin-left:70%;
-  margin-top:20%;
+  margin-left:7%;
+  width:100px;
 }
 .small-flower-4{
   margin-left:20%;
-  margin-top:-20%;
+  width:150px;
 }
 .small-flower-5{
-  margin-left:60%;
-  margin-top:-10%;
+  margin-left:18%;
+  width:120px;
+}
+.small-flower-6{
+  margin-left:20%;
+  margin-top:20%;
+  width:160px;
 }
 .bg-cls-1 {
   animation: bloom1 1s linear infinite;
